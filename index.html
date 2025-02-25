@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SkyCast Weather Report</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    
+    <div class="general-container">
+        <div class="header-section">
+            <div class="head-logo">
+                <a href="#"><img src="./Elements/SkyCast-logo.png" alt="SkyCast Logo"></a>
+            </div>
+            <div class="menu-icon">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+        <div class="content-section">
+            <div id="background-img-container" class="background-img-container">
+
+            </div>
+
+            <form id="city-form">
+                <label for="input-field">Enter Your City Here</label>
+                <input type="text" name="input-field" id="input-field" placeholder="e.g London">
+                <h3 class="err-msg" id="err-msg">***Please, Enter a valid location</h3>
+                <button type="submit">Get Weather Report</button>
+            </form>
+
+            <div id="weather-info" class="weather-info">
+                <div class="country-and-city">
+                    <div class="city">
+                        <h3>LAGOS</h3>
+                    </div>
+                    <div class="country">
+                        <h3>NG</h3>
+                    </div>
+                </div>
+                <div class="temp-deg">
+                    <h1>32</h1>
+                    <h3>°C</h3>
+                </div>
+                <div class="other-parameters">
+                    <div class="pressure">
+                        <h3>Pressure</h3>
+                        <h5>29.99 hPa</h5>
+                    </div>
+                    <div class="humidity">
+                        <h3>Humidity</h3>
+                        <h5>65%</h5>
+                    </div>
+                    <div class="feels-like">
+                        <h3>Feels Like</h3>
+                        <h5>99°</h5>
+                    </div>
+                    <div class="wind">
+                        <h3>Wind</h3>
+                        <h5>8 mph</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-section">
+            <div class="copyright">
+                <h3>© 2025 SkyCast</h3>
+                <h3>Powered by <a href="https://openweathermap.org" target="_blank">OpenWeatherMap API</a></h3>
+            </div>
+            <div class="foot-logo">
+                <a href="#"><img src="./Elements/SkyCast-logo1.png" alt="SkyCast Logo"></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- <script src="./script.js"></script> -->
+    <script src="./scripptt.js"></script>
+</body>
+</html>
