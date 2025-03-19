@@ -339,3 +339,109 @@ button:hover{
     text-decoration: none;
     /* color: #3b3b3b; */
 }
+
+/* Mobile responsiveness */
+@media screen and (max-width: 480px){
+    .general-container{
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+        background-color: #ebeaea;
+    }
+
+    .header-section{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem 2rem;
+        background-color: white;
+        border-bottom: 1px solid #d5d5d5;
+    }
+
+    form{
+        width: 100%;
+        height: auto;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+        row-gap: 0.9rem;
+        padding: 4rem 2rem 4rem 2rem;
+    }
+
+    form label{
+        font-size: 1.3rem;
+        color: #3b3b3b;
+        font-weight: 800;
+    }
+
+    .err-msg{
+        font-size: 0.8rem;
+        font-weight: 600;
+        color: rgb(156, 0, 0);
+        visibility: hidden;
+    }
+
+    button{
+        background-color: #6a30ca;
+        color: white;
+        border: none;
+        border-radius: 0.25rem;
+        font-size: 0.8rem;
+        font-weight: 500;
+        padding: 0.8rem 1rem;
+        cursor: pointer;
+    }
+
+    .weather-info{
+        width: 90%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+        position: relative;
+        row-gap: 1rem;
+        background-color: rgba(255, 255, 255, 0.228);
+        border-radius: 0.8rem;
+        border: 1px solid whitesmoke;
+        padding: 1.5rem 1rem;
+        backdrop-filter: blur(3px);
+    }
+
+    .footer-section{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+        row-gap: 0.5rem;
+        padding: 1rem;
+        position: relative;
+        background-color: #ebeaea;
+    }
+
+    .copyright{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+        row-gap: 0.5rem;
+    }
+
+    .copyright h3{
+        font-size: 0.8rem;
+        font-weight: 500;
+        color: #3b3b3b;
+    }
+}
